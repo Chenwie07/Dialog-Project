@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ef9c2cccb57eb4597d69eca8886f96, type: 3}
+  m_Name: Player
+  m_EditorClassIdentifier: 
+  portrait: {fileID: 318317056, guid: ec9ba89e85bb4544e89532c90435465f, type: 3}
+  speakerName: Judi
