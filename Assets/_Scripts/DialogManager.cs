@@ -44,6 +44,7 @@ public class DialogManager : MonoBehaviour
     }
     private void BeginDialog()
     {
+        _sayDialog.gameObject.SetActive(true); 
         WriteDialog(lineIdx, npc);
         onDialogStarted.Invoke();
     }
