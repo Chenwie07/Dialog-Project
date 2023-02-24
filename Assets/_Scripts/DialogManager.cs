@@ -12,6 +12,7 @@ using UnityEngine.Events;
 
 public class DialogManager : MonoBehaviour
 {
+    // Quick Singleton
     public static DialogManager Instance;
 
     public Character player;
@@ -82,4 +83,9 @@ public class DialogManager : MonoBehaviour
     public void RestoreControls() => isRunning = false;
     public void BlockControls() => isRunning = true;
 
+    private void OnDisable()
+    {
+        onDialogEnded.RemoveListener(RestoreControls);
+        onDialogStarted.RemoveListener(BlockControls); 
+    }
 }
